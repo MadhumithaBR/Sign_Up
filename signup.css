@@ -1,0 +1,64 @@
+body {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1), rgb(139, 163, 209) 100%);
+    font-family: 'Times New Roman', Times, serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: gradientBackground 10s ease infinite;
+    background-color: rgb(186, 127, 127);
+ background: 5s ease-in-out; /* Add transition for background */
+}
+
+#form {
+    max-width: 500px;
+    margin: 10vh auto 0 auto;
+    padding: 30px;
+    background-color: rgb(213, 164, 209);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes gradientBackground {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.content-group .form-control {
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 10px;
+    color: black;
+    border: 2px solid black;
+}
+
+.content-group .error {
+    color: red;
+    margin-top: 5px;
+}
+
+.content-group.error .form-control {
+    border-color: rgb(206, 67, 67);
+}
+
+.content-group.success .form-control {
+    border-color: rgb(28, 206, 69);
+}
